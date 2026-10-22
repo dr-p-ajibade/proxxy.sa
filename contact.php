@@ -1,5 +1,5 @@
 <?php
-// Proxxy Media audit request handler.
+// Proxxy Media consultation request handler.
 // Emails info@proxxymedia.com and keeps a copy of each request outside the public web folder.
 
 declare(strict_types=1);
@@ -39,11 +39,13 @@ $firm    = str_replace("\n", ' ', field('firm', 160));
 $email   = str_replace("\n", '', field('email', 160));
 $phone   = str_replace("\n", ' ', field('phone', 40));
 $sector  = str_replace("\n", ' ', field('sector', 60));
+$need    = str_replace("\n", ' ', field('need', 60));
+$country = str_replace("\n", ' ', field('country', 80));
 $message = field('message', 3000);
 $riq     = field('registeriq', 5) === 'yes' ? 'Yes' : 'No';
 $consent = field('consent', 5) === 'yes';
 
-if ($name === '' || $firm === '' || $email === '' || $sector === '' || !$consent) {
+if ($need === '' || $name === '' || $firm === '' || $email === '' || $sector === '' || $country === '' || !$consent) {
     back('missing');
 }
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -51,30 +53,32 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 $when = date('Y-m-d H:i');
-$body = "New audit request from proxxymedia.com\n\n"
+$body = "New consultation request from proxxymedia.com\n\n"
+      . "Needs help with: $need\n"
       . "Name: $name\n"
-      . "Firm: $firm\n"
+      . "Organisation: $firm\n"
       . "Email: $email\n"
       . "Phone: " . ($phone !== '' ? $phone : 'not given') . "\n"
-      . "Sector: $sector\n"
+      . "Type: $sector\n"
+      . "Country: $country\n"
       . "RegisterIQ early access: $riq\n"
       . "Received: $when\n\n"
-      . "What takes up most of their time:\n"
+      . "Their note:\n"
       . ($message !== '' ? $message : 'not given') . "\n";
 
 // Keep a copy outside public_html so nothing is lost if mail delivery fails.
 $logDir  = dirname(__DIR__) . '/proxxy_leads';
 $saved = false;
 if (is_dir($logDir) || @mkdir($logDir, 0700, true)) {
-    $fh = @fopen($logDir . '/audit_requests.csv', 'ab');
+    $fh = @fopen($logDir . '/consultation_requests.csv', 'ab');
     if ($fh) {
-        fputcsv($fh, [$when, $name, $firm, $email, $phone, $sector, $riq, $message]);
+        fputcsv($fh, [$when, $need, $name, $firm, $email, $phone, $sector, $country, $riq, $message]);
         fclose($fh);
         $saved = true;
     }
 }
 
-$subject = 'Audit request: ' . $firm;
+$subject = $need . ': ' . $firm . ' (' . $country . ')';
 $headers = [
     'From: Proxxy Media website <' . FROM_EMAIL . '>',
     'Reply-To: ' . $email,
