@@ -1,0 +1,3 @@
+# Keep repo tooling and notes off the public web.
+RedirectMatch 404 ^/\.(claude|git)(/|$)
+RedirectMatch 404 ^/(CLAUDE|README)\.md$
