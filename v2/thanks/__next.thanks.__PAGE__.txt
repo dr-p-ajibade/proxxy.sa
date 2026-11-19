@@ -1,0 +1,26 @@
+2:"$Sreact.fragment"
+3:"/v2/_next/static/chunks/1s1dntksi2y5f.js"
+4:I[39756,["$3"],"default"]
+5:I[37457,["$3"],"default"]
+a:I[22016,["$3"],""]
+b:I[97367,["$3"],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:"ViewportBoundary"
+10:I[97367,["$3"],"$f"]
+11:"MetadataBoundary"
+12:I[97367,["$3"],"$11"]
+13:I[27201,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[[["$","header",null,{"className":"on-ink relative overflow-hidden bg-ink text-paper","children":[["$","div",null,{"aria-hidden":true,"className":"lines-wave absolute inset-0 opacity-[0.07]"}],["$","div",null,{"className":"wrap relative grid items-end gap-10 py-16 md:grid-cols-[1fr_auto] md:py-24","children":[["$","div",null,{"className":"min-w-0","children":[["$","p",null,{"className":"label text-ochre","children":"Request received"}],["$","h1",null,{"className":"display mt-4 max-w-4xl text-[2.6rem] sm:text-6xl md:text-7xl","children":["Thank you, ",["$","em",null,{"children":"it is in."}]]}],["$","div",null,{"className":"mt-6 max-w-2xl text-lg text-paper/75","children":"We will email you at the address you gave to set a time for your free consultation."}]]}],"$undefined"]}],["$","div",null,{"aria-hidden":true,"className":"band lines-arc opacity-30"}]]}],["$","div",null,{"className":"wrap py-14 md:py-20","children":["$","div",null,{"className":"rounded-2xl border border-ink/15 p-8","children":[["$","p",null,{"className":"font-display text-2xl","children":"Before the call, gather what you already have."}],["$","p",null,{"className":"mt-3 text-ink/75","children":"A PAIA manual, a privacy notice, a file plan, a funder's brief or a list of tasks your team repeats every week all help us give you a useful answer."}],["$","$La",null,{"href":"/services/","className":"btn btn-line mt-6","children":"Browse services"}]]}]}]],null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],"p":"$@e","v":null,"s":"$8"}}]]
+1:[["children",{"s":"thanks","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L10",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#14110e"}]]}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Request received · Proxxy Media"}],["$","meta","1",{"name":"description","content":"Data protection compliance, records care, automation, training and research information services for organisations in South Africa, Nigeria and worldwide. Monthly plans from R2,950."}],["$","meta","2",{"name":"robots","content":"noindex"}],["$","meta","3",{"property":"og:title","content":"Proxxy Media"}],["$","meta","4",{"property":"og:description","content":"Your records and data, handled every month."}],["$","meta","5",{"property":"og:site_name","content":"Proxxy Media"}],["$","meta","6",{"property":"og:type","content":"website"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"Proxxy Media"}],["$","meta","9",{"name":"twitter:description","content":"Your records and data, handled every month."}],["$","link","10",{"rel":"icon","href":"/v2/icon.svg?icon.2wn-2bfa98n1y.svg","sizes":"any","type":"image/svg+xml"}],["$","$L13","11",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@14","v":null,"s":"$8"}},"a":"$@15","u":"$@16","b":"6ey9VR0PAgTvJIGflTXTX"}
+d:null
+16:true
+8:300
+8:C
+15:0
+6:"$undefined"
+14:"$undefined"
+e:"$undefined"

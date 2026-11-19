@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /_backup_vite_2026-10-22/
+Disallow: /v2/
 Allow: /
 
 Sitemap: https://proxxymedia.com/sitemap.xml
